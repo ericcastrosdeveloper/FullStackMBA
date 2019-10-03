@@ -7,6 +7,7 @@ public class TestaPessoa {
 
         Pessoa pessoa2 = new Pessoa("Eric 2", 24);
 
-        System.out.println(pessoa.getIdentificador());
+        System.out.println(Pessoa.getIdentificador());
+
     }
 }

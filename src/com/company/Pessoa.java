@@ -4,7 +4,7 @@ public class Pessoa {
     private String nome;
     private int idade;
     private double peso;
-    private static int identificador;
+    protected static int identificador;
 
     public Pessoa() {
     }

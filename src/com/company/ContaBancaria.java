@@ -3,8 +3,11 @@ package com.company;
 public class ContaBancaria {
 
     private String titular;
-    private double saldo;
+    protected double saldo;
     private int numeroConta;
+
+    public ContaBancaria() {
+    }
 
     public ContaBancaria(String titular, double saldo, int numeroConta) {
         this.titular = titular;
@@ -25,12 +28,8 @@ public class ContaBancaria {
     }
 
     public double saque(double valor){
-        if(valor > getSaldo()){
-            System.out.println("Não é possivel realizar o saque. Valor > Saldo ");
-            return this.saldo;
-        }
+            return this.saldo-=valor;
 
-        return this.saldo-= valor;
     }
 
     public String getTitular() {
@@ -47,5 +46,9 @@ public class ContaBancaria {
 
     public void setNumeroConta(int numeroConta) {
         this.numeroConta = numeroConta;
+    }
+
+    public String getTipo(){
+        return "Conta ";
     }
 }
