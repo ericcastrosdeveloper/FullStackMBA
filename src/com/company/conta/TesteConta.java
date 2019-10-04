@@ -1,4 +1,7 @@
-package com.company;
+package com.company.conta;
+
+import com.company.conta.ContaCorrente;
+import com.company.conta.ContaPoupanca;
 
 public class TesteConta {
 

@@ -21,7 +21,6 @@ public class Motorista extends Funcionario {
 
     @Override
     public int getBonificacao() {
-
         return 60;
     }
 }

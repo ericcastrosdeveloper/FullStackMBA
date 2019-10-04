@@ -1,6 +1,6 @@
 package com.company;
 
-public class Funcionario {
+public abstract class Funcionario {
 
     int numero;
     String nome;
@@ -34,8 +34,5 @@ public class Funcionario {
         System.out.println("Funcionario que trabalha!");
     }
 
-    public int getBonificacao() {
-
-        return 10;
-    }
+    public abstract int getBonificacao();
 }

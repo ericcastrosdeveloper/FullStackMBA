@@ -1,4 +1,4 @@
-package com.company;
+package com.company.conta;
 
 public class ContaPoupanca extends ContaBancaria {
 
@@ -10,8 +10,7 @@ public class ContaPoupanca extends ContaBancaria {
         super(titular, saldo, numeroConta);
     }
 
-    @Override
     public String getTipo(){
-        return super.getTipo() + "Poupança";
+        return "Conta Poupança";
     }
 }
