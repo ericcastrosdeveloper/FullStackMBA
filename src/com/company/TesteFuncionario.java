@@ -3,6 +3,12 @@ package com.company;
 public class TesteFuncionario {
 
     public static void main(String[] args) {
+
+        Diretor diretor = new Diretor();
+        diretor.coisa(1);
+
+        Autenticavel a = diretor;
+
 //        Funcionario f1 = new Funcionario();
 //        f1.setNome("João");
 //        f1.setNumero(123);
